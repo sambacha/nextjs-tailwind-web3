@@ -1,0 +1,50 @@
+{
+  "name": "nextjs-web3x",
+  "version": "0.1.0",
+  "description": "nextjs optimized for web3 performance",
+  "private": true,
+  "scripts": {
+    "dev": "NEXT_TELEMETRY_DISABLED=1 npx next dev",
+    "build": "NEXT_TELEMETRY_DISABLED=1 NODE_ENV=production npx next build",
+    "start": "NEXT_TELEMETRY_DISABLED=1 next start",
+    "lint": "npx next lint",
+    "debug": "NEXT_TELEMETRY_DEBUG=1 npx next dev",
+    "telemetry": "npx next telemetry disable",
+    "analyze": "cross-env ANALYZE=true next build",
+    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
+    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.5",
+    "next": "^12.0.4",
+    "next-pwa": "^5.4.0",
+    "next-themes": "^0.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^12.0.1",
+    "@types/node": "^14.17.27",
+    "@types/react": "17.0.30",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "prettier": "^2.4.1",
+    "typescript": "4.4.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.3%",
+      "not dead",
+      "not op_mini all",
+      "not IE > 0",
+      "not samsung 4",
+      "not and_uc 12.12"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 edge version",
+      "last 1 safari version"
+    ]
+  }
+}

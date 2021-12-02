@@ -1,0 +1,12 @@
+.next/
+public/
+*.js
+*.min.js
+*.html
+*.css
+*.scss
+*.png
+*.svg
+dist/
+build/
+
