@@ -1,12 +1,11 @@
 /**
-* @file Nextjs
-* @copyright 2021
-* @license Apache-2.0
-*/
+ * @file Nextjs
+ * @copyright 2021
+ * @license Apache-2.0
+ */
 import { ThemeProvider } from 'next-themes';
 import { darkTheme, globalCss, theme } from '../stitches.config';
 import { AppProps } from 'next/app';
-
 
 const globalStyles = globalCss({
   '*': {
@@ -34,7 +33,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ThemeProvider>
   );
 }
-
 
 export default MyApp;
 /** @exports MyApp */

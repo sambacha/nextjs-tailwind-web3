@@ -123,7 +123,10 @@ export function useXFOLDFacetProxy() {
 export function useDictatorDAO() {
   const chainId = useWeb3Store(chainIdSelector);
 
-  return useContract<DictatorDAO>(CONTRACT_ADDRESSES.DictatorDAO[chainId], DictatorDAO_ABI);
+  return useContract<DictatorDAO>(
+    CONTRACT_ADDRESSES.DictatorDAO[chainId],
+    DictatorDAO_ABI,
+  );
 }
 
 export function useFOLDUSDCRewards() {
